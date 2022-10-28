@@ -4,6 +4,7 @@ const books = [
     authorFirst: "Harper",
     authorLast: "Lee",
     publishDate: 1960,
+    genre: ["mystery", "historical", "fiction"],
   },
   {
     name: "The Great Gatsby",
@@ -88,3 +89,8 @@ const titles = [
 //was there at least one book published within the last 100 years?
 
 //was every book published within the last 100 years?
+books
+  .filter((book) => book.publishDate < 1868)
+  .forEach((book) => {
+    console.log(book);
+  });
