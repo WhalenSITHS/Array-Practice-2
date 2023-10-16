@@ -98,8 +98,5 @@ const titles = [
 //was there at least one book published within the last 100 years?
 
 //was every book published within the last 100 years?
-books
-  .filter((book) => book.publishDate < 1868)
-  .forEach((book) => {
-    console.log(book);
-  });
+
+//print a list of books that "includes" the genre historical
